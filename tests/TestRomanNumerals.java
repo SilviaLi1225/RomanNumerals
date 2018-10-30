@@ -31,5 +31,23 @@ public class TestRomanNumerals {
 		
 	}
 	
+	@Test
+	public void test_2014(){
+		//Arrange
+		RomanNumerals rm = new RomanNumerals();
+		//Act
+		int result = rm.convertToInteger("MMXIV");
+		assertEquals(2014,result);
+	}
+	
+	@Test
+	public void test_1984(){
+		//Arrange
+		RomanNumerals rm = new RomanNumerals();
+		//Act
+		int result = rm.convertToInteger("MCMLXXXIV");
+		assertEquals(1984,result);
+	}
+	
 
 }
